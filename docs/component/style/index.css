@@ -1,0 +1,18 @@
+.colleft{
+    background: rgb(64, 169, 255);
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+.collright{
+    background: rgb(24, 144, 255);
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+.maginBottom{
+    margin-bottom: 20px;
+}
+.magright{
+    margin-right: 20px;
+}

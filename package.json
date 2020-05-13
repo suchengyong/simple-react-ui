@@ -19,7 +19,9 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
-  "main": "dist/index.js",
+  "main": "lib/simple-react.js",
+  "author": "suchengyong",
+  "license": "MIT",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "gitHooks": {

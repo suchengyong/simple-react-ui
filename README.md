@@ -15,7 +15,7 @@ npm i -D suchengyong-react-simple-ui
 ##### 2. Get Started
 
 ```
-import  {  Button  }  from  'ssuchengyong-react-simple-ui'
+import  {  Button  }  from  'suchengyong-react-simple-ui'
 import  'suchengyong-react-simple-ui/lib/simple-react.css'
 
 <Button  type="primary">Primary</Button>

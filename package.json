@@ -1,6 +1,7 @@
 {
   "private": false,
-  "name": "simple-react",
+  "version": "0.0.1",
+  "name": "suchengyong-react-simple-ui",
   "description": "一个简洁风格的react组件库",
   "keywords": [
     "components",
@@ -24,6 +25,10 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "bugs": {
+    "url": "https://github.com/suchengyong/simple-react-ui.git/issues"
+  },
+  "homepage": "https://github.com/suchengyong/simple-react-ui.git#readme",
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"

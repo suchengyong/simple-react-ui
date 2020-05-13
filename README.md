@@ -6,17 +6,17 @@
 
 ## 使用方式
 
-##### 1. Install package [simple-react]
+##### 1. Install package [suchengyong-react-simple-ui]
 
 ```sh
-npm i -D simple-react
+npm i -D suchengyong-react-simple-ui
 ```
 
 ##### 2. Get Started
 
 ```
-import  {  Button  }  from  'simple-react'
-import  'simple-react/lib/simple-react.css'
+import  {  Button  }  from  'ssuchengyong-react-simple-ui'
+import  'suchengyong-react-simple-ui/lib/simple-react.css'
 
 <Button  type="primary">Primary</Button>
 ```

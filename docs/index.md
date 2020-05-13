@@ -14,16 +14,16 @@ hero:
 您可以使用 npm / yarn 来安装。
 
 ```
-$ npm install simple-react
+$ npm install suchengyong-react-simple-ui
 或者
-$ yarn add simple-react
+$ yarn add suchengyong-react-simple-ui
 ```
 
 ## 简单使用
 
 ```
-import  {  Button  }  from  'simple-react'
-import  'simple-react/lib/simple-react.css'
+import  {  Button  }  from  'suchengyong-react-simple-ui'
+import  'suchengyong-react-simple-ui/lib/simple-react.css'
 
 <Button  type="primary">Primary</Button>
 ```

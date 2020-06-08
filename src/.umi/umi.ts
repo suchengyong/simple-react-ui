@@ -1,9 +1,10 @@
+// @ts-nocheck
 import './core/polyfill';
 import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/runtime';
-import { renderClient } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_runtime@3.2.3@@umijs/runtime';
+import { renderClient } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_renderer-react@3.2.3@@umijs/renderer-react/dist/index.js';
 
 
 
@@ -18,7 +19,7 @@ const getClientRender = (args: { hot?: boolean } = {}) => plugin.applyPlugins({
       plugin,
       history: createHistory(args.hot),
       rootElement: 'root',
-      defaultTitle: 'react 组件库',
+      defaultTitle: `react 组件库`,
     });
   },
   args,
@@ -29,7 +30,7 @@ export default clientRender();
 
 
     window.g_umi = {
-      version: '3.1.4',
+      version: '3.2.3',
     };
   
 

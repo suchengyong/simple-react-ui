@@ -81,7 +81,10 @@ class CheckBoxGroup extends React.Component<
   public selectAll = (isAll: boolean) => {
     const { options, onChange } = this.props;
     const newValue = isAll
-      ? options.reduce((prev, current) => [current.value, ...prev], [])
+      ? (options as any).reduce(
+          (prev: any, current: { value: any }) => [current.value, ...prev],
+          [],
+        )
       : [];
     this.setState({
       derivedValue: newValue,

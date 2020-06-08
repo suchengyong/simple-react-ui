@@ -10,7 +10,7 @@ order: 3
 
 ### 主色
 
-suchengyong-react-simple-ui 使用友好的蓝色作为主色
+suchengyong-simple-react 使用友好的蓝色作为主色
 
 ```jsx | inline
 import React from 'react';

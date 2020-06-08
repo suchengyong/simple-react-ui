@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
 import Transition from '../transition/Transition';
-import './style';
+//import './style';
 
 export interface PopoveProps {
   content: string | React.ReactNode;
@@ -56,10 +56,10 @@ class Popover extends React.Component<PopoveProps, PopoveState> {
     }
     return null;
   }
-  private triggerNode: HTMLElement;
-  private wrapperRef: HTMLDivElement;
-  private contentRef: HTMLDivElement;
-  private arrowRef: HTMLDivElement;
+  private triggerNode: any;
+  private wrapperRef: any;
+  private contentRef: any;
+  private arrowRef: any;
   private delay: number = 200;
   private timeout: any;
 

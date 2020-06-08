@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 
 export interface ScrollProps {
   yBarVisible?: boolean; // 是否始终显示垂直滚动条
@@ -44,20 +44,20 @@ class Scroll extends React.Component<ScrollProps, ScrollState> {
     yVisible: true,
   };
 
-  private wrapperRef: HTMLDivElement;
-  private containerRef: HTMLDivElement;
-  private yBarRef: HTMLDivElement;
-  private wrapperHeight: number;
-  private containerHeight: number;
-  private barHeight: number;
-  private maxContainerScrollHeight: number;
-  private barStartTranslateY: number;
-  private maxBarScrollHeight: number;
-  private startClientY: number;
-  private mouseDown: boolean;
-  private mouseIn: boolean;
-  private userSelect: string | null;
-  private yTrackRef: HTMLDivElement;
+  private wrapperRef: any;
+  private containerRef: any;
+  private yBarRef: any;
+  private wrapperHeight: any;
+  private containerHeight: any;
+  private barHeight: any;
+  private maxContainerScrollHeight: any;
+  private barStartTranslateY: any;
+  private maxBarScrollHeight: any;
+  private startClientY: any;
+  private mouseDown: any;
+  private mouseIn: any;
+  private userSelect: any;
+  private yTrackRef: any;
 
   public componentDidMount() {
     this.getElRect();

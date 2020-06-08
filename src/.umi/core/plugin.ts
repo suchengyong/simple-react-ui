@@ -1,4 +1,5 @@
-import { Plugin } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/runtime';
+// @ts-nocheck
+import { Plugin } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_runtime@3.2.3@@umijs/runtime';
 
 const plugin = new Plugin({
   validKeys: ['patchRoutes','rootContainer','render','onRouteChange','getInitialState','request',],

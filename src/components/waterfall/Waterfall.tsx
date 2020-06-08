@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
 
@@ -25,11 +24,11 @@ class Waterfall extends React.Component<WaterfallProps, WaterfallState> {
     width: PropTypes.number,
   };
 
-  private wrapperEl: HTMLDivElement;
+  private wrapperEl: any;
 
   public componentDidMount() {
-    const nodeList: HTMLElement[] = [];
-    this.wrapperEl.childNodes.forEach(node => {
+    const nodeList: any = [];
+    this.wrapperEl.childNodes.forEach((node: any) => {
       if (node.nodeType === 1) {
         nodeList.push(node as HTMLElement);
         console.log(this.calculateNodeHeight(node as HTMLElement));

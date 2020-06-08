@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 
 export interface RadioProps {
   value?: any;
@@ -77,7 +77,7 @@ class Radio extends React.Component<RadioProps, RadionState> {
     const { radioStyle, vertical, children } = this.props;
     const { checkedValue } = this.state;
     return React.Children.map(
-      children,
+      children as any,
       (child: React.ReactElement<OptionProps>) => {
         return React.cloneElement(child, {
           onClick: this.handleClick,

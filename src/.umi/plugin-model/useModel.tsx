@@ -1,8 +1,9 @@
+// @ts-nocheck
 import { useState, useEffect, useContext, useRef } from 'react';
 // @ts-ignore
-import isEqual from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/fast-deep-equal/index.js';
+import isEqual from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_fast-deep-equal@3.1.1@fast-deep-equal/index.js';
 // @ts-ignore
-import { UmiContext } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/plugin-model/lib/helpers/constant';
+import { UmiContext } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_plugin-model@2.3.1@@umijs/plugin-model/lib/helpers/constant';
 import { Model, models } from './Provider';
 
 export type Models<T extends keyof typeof models> = Model<T>[T]

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 
 export interface AffixProps {
   distance?: number;
@@ -25,8 +25,8 @@ class Affix extends React.Component<AffixProps> {
   };
 
   private top: number = 0;
-  private wrapperRef: HTMLDivElement;
-  private affixRef: HTMLDivElement;
+  private wrapperRef: any;
+  private affixRef: any;
 
   public componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);

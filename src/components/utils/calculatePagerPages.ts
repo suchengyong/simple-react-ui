@@ -62,7 +62,7 @@ function getOriginArray(current: number, total: number) {
 }
 
 function getUniqueArray(arr: number[]): number[] {
-  const map = {};
+  const map: any = {};
   const results: number[] = [];
   arr.forEach(item => {
     if (!map[item]) {

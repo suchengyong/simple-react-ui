@@ -57,8 +57,8 @@ class Textarea extends React.Component<TextareaProps, TextareaState> {
     return null;
   }
 
-  private textareaRef: HTMLTextAreaElement;
-  private originHeight: number;
+  private textareaRef: any;
+  private originHeight: any;
 
   constructor(props: TextareaProps) {
     super(props);
@@ -68,7 +68,7 @@ class Textarea extends React.Component<TextareaProps, TextareaState> {
   }
 
   public componentDidMount() {
-    const el = ReactDOM.findDOMNode(this) as HTMLTextAreaElement;
+    const el = ReactDOM.findDOMNode(this) as any;
     const { top, bottom } = el.getBoundingClientRect();
     this.originHeight = bottom - top;
   }

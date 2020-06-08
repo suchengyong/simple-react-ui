@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 
 export interface SlidesProps {
   duration?: number;
@@ -41,7 +41,7 @@ class Slides extends React.Component<SlidesProps, SlidesState> {
     current: 1,
   };
 
-  private containerRef: HTMLDivElement;
+  private containerRef: any;
   private isTransitioning: boolean = false;
   private length: number = 0;
   private prevIndex: number = 1;
@@ -73,11 +73,11 @@ class Slides extends React.Component<SlidesProps, SlidesState> {
 
   public cloneNode() {
     const nodeList: HTMLElement[] = [];
-    this.containerRef.childNodes.forEach(node => {
+    this.containerRef.childNodes.forEach((node: any) => {
       if (node.nodeType === 1) {
         const eleNode = node as HTMLElement;
         nodeList.push(eleNode);
-        eleNode.style['flex-shrink'] = 0;
+        (eleNode.style as any)['flex-shrink'] = 0;
       }
     });
     this.length = nodeList.length;

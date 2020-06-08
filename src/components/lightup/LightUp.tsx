@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
 import Transition from '../transition/Transition';
-import './style';
+//import './style';
 
 export interface Size {
   width: number;
@@ -35,13 +35,13 @@ class LightUp extends React.Component<LightUpProps> {
     y: 0,
   };
 
-  private img: HTMLImageElement;
-  private size: Size;
-  private maskRef: HTMLDivElement;
-  private wrapperRef: HTMLDivElement;
+  private img: any;
+  private size: any;
+  private maskRef: any;
+  private wrapperRef: any;
 
   public getImgSize = () => {
-    this.img = ReactDOM.findDOMNode(this) as HTMLImageElement;
+    this.img = ReactDOM.findDOMNode(this) as any;
     const { left, right, bottom, top } = this.img.getBoundingClientRect();
     this.size = {
       width: right - left,
@@ -66,7 +66,7 @@ class LightUp extends React.Component<LightUpProps> {
     }
   };
 
-  public handleClickImg: React.MouseEventHandler<HTMLImageElement> = e => {
+  public handleClickImg: React.MouseEventHandler<any> = e => {
     this.setState(
       {
         visible: true,

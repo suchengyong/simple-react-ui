@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
 import Icon from '../icon/Icon';
 import Transition from '../transition/Transition';
-import './style';
+//import './style';
 
 export interface SpinProps {
   spinning?: boolean;

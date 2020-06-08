@@ -64,7 +64,7 @@ class Search extends React.Component<SearchProps, SearchState> {
     };
   }
 
-  public handleChange: React.ChangeEventHandler<HTMLInputElement> = e => {
+  public handleChange: React.ChangeEventHandler<any> = e => {
     this.setState({
       derivedValue: e.target.value,
     });

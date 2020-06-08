@@ -55,10 +55,10 @@ class Unfold extends React.Component<UnfoldProps> {
     transitionTime: PropTypes.number,
   };
 
-  private node: HTMLElement;
+  private node: any;
   private monitored: boolean = false;
   private nodeDisplay: any;
-  private rendered: boolean;
+  private rendered: any;
   private transitionEffect: TransitionEffect = {
     vertical: '',
     horizontal: '',
@@ -307,7 +307,7 @@ class Unfold extends React.Component<UnfoldProps> {
     }
   }
 
-  public setNodeStyle = (node: HTMLElement, cssProp: object) => {
+  public setNodeStyle = (node: any, cssProp: any) => {
     Object.keys(cssProp).forEach(key => {
       node.style[key] = cssProp[key];
     });

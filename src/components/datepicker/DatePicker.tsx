@@ -7,7 +7,7 @@ import DatePanel from './DatePanel';
 import MonthPanel from './MonthPanel';
 import YearPanel from './YearPanel';
 import DecadePanel from './DecadePanel';
-import './style';
+//import './style';
 
 export interface DatePickerProps {
   value?: string;
@@ -72,7 +72,7 @@ class DatePicker extends React.Component<DatePickerProps, DatePickerState> {
     return null;
   }
 
-  private datePickerRef: HTMLDivElement;
+  private datePickerRef: any;
 
   constructor(props: DatePickerProps) {
     super(props);
@@ -288,7 +288,7 @@ class DatePicker extends React.Component<DatePickerProps, DatePickerState> {
           <YearPanel
             startYear={Math.floor(pickerValue.year / 10) * 10}
             year={pickerValue.year}
-            onClickYear={this.handleClickYear}
+            onClickYear={this.handleClickYear as any}
           />
         );
       case 'decade':
@@ -296,7 +296,7 @@ class DatePicker extends React.Component<DatePickerProps, DatePickerState> {
           <DecadePanel
             startDecade={Math.floor(pickerValue.year / 100) * 100}
             decade={Math.floor(pickerValue.year / 10) * 10}
-            onClickDecade={this.handleClickDecade}
+            onClickDecade={this.handleClickDecade as any}
           />
         );
       default:

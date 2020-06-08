@@ -18,12 +18,12 @@ export interface ModalOptions {
 
 const modalContainerMap = {};
 
-function addModalContainer(modalId: string, container: HTMLDivElement) {
-  modalContainerMap[modalId] = container;
+function addModalContainer(modalId: string, container: any) {
+  (modalContainerMap as any)[modalId] = container;
 }
 
 function ensureUniqueModal(modalId: string) {
-  if (modalContainerMap[modalId]) {
+  if ((modalContainerMap as any)[modalId]) {
     throw new Error(`Duplicate modalId found: ${modalId}`);
   }
 }
@@ -47,7 +47,7 @@ export function openModal(options: ModalOptions) {
     const container = document.createElement('div');
     document.body.append(container);
     const modalInstance = React.createElement(
-      Modal as React.ComponentClass,
+      (Modal as any) as React.ComponentClass,
       {
         visible: true,
         mode: 'imperative',
@@ -71,11 +71,11 @@ export function openModal(options: ModalOptions) {
 }
 
 export function removeModal(modalId: string) {
-  if (!modalContainerMap[modalId]) {
+  if (!(modalContainerMap as any)[modalId]) {
     return;
   }
-  const container = modalContainerMap[modalId];
+  const container = (modalContainerMap as any)[modalId];
   ReactDOM.unmountComponentAtNode(container);
   container.remove();
-  delete modalContainerMap[modalId];
+  delete (modalContainerMap as any)[modalId];
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { arrayIsEqual, classes } from '../utils';
-import './style';
+//import './style';
 
 export interface MenuProps {
   selectedKey?: string;
@@ -96,7 +96,7 @@ class Menu extends React.Component<MenuProps, MenuState> {
     const { mode, theme, children } = this.props;
     const { derivedSelectedKey, derivedExpandKeys } = this.state;
     return React.Children.map(
-      children,
+      children as any,
       (child: React.ReactElement<ChildProps>, index: number) => {
         const uniqueKey = this.getUniqueKeyFromChild(child, index);
         return React.cloneElement(child, {

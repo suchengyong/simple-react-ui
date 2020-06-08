@@ -80,6 +80,7 @@ export interface IConfigFromPlugins {
     https?: {} | boolean;
     http2?: boolean;
     headers?: {};
+    writeToDisk?: boolean | (() => any);
     [k: string]: any;
   };
   devtool?: string;
@@ -95,38 +96,15 @@ export interface IConfigFromPlugins {
   exportStatic?: {
     htmlSuffix?: boolean;
     dynamicRoot?: boolean;
+    /**
+     * extra render paths only enable in ssr
+     */
+    extraRoutePaths?: () => any;
   };
   externals?: {} | string | (() => any);
   extraBabelPlugins?: any[];
   extraBabelPresets?: any[];
   extraPostCSSPlugins?: any[];
-  hash?: boolean;
-  ignoreMomentLocale?: boolean;
-  inlineLimit?: number;
-  lessLoader?: {};
-  manifest?: {
-    fileName?: string;
-    publicPath?: string;
-    basePath?: string;
-  };
-  mountElementId?: "";
-  mpa?: {};
-  nodeModulesTransform?: {
-    type?: "all" | "none";
-    exclude?: string[];
-  };
-  outputPath?: "";
-  plugins?: string[];
-  postcssLoader?: {};
-  presets?: string[];
-  proxy?: {};
-  publicPath?: string;
-  runtimePublicPath?: boolean;
-  singular?: boolean;
-  styleLoader?: {};
-  targets?: {};
-  terserOptions?: {};
-  theme?: {};
   /**
    * More options see https://www.npmjs.com/package/fork-ts-checker-webpack-plugin#options
    */
@@ -148,6 +126,49 @@ export interface IConfigFromPlugins {
     silent?: boolean;
     checkSyntacticErrors?: boolean;
   };
+  hash?: boolean;
+  ignoreMomentLocale?: boolean;
+  inlineLimit?: number;
+  lessLoader?: {};
+  manifest?: {
+    fileName?: string;
+    publicPath?: string;
+    basePath?: string;
+    writeToFileEmit?: boolean;
+  };
+  mountElementId?: "";
+  mpa?: {};
+  nodeModulesTransform?: {
+    type?: "all" | "none";
+    exclude?: string[];
+  };
+  outputPath?: "";
+  plugins?: string[];
+  postcssLoader?: {};
+  presets?: string[];
+  proxy?: {};
+  publicPath?: string;
+  runtimePublicPath?: boolean;
+  ssr?: {
+    /**
+     * remove window.g_initialProps in html, to force execing Page getInitialProps  functions
+     */
+    forceInitial?: boolean;
+    /**
+     * disable serve-side render in umi dev mode.
+     */
+    devServerRender?: boolean;
+    mode?: "stream" | "string";
+    /**
+     * static markup in static site
+     */
+    staticMarkup?: boolean;
+  };
+  singular?: boolean;
+  styleLoader?: {};
+  targets?: {};
+  terserOptions?: {};
+  theme?: {};
   favicon?: string;
   headScripts?: any[];
   links?: any[];
@@ -173,6 +194,7 @@ export interface IConfigFromPlugins {
   antd?: {
     dark?: boolean;
     compact?: boolean;
+    config?: {};
   };
   dva?: {
     immer?: boolean;

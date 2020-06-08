@@ -31,10 +31,10 @@ class Transition extends React.Component<TransitionProps> {
     transitionActive: PropTypes.object,
   };
 
-  private node: HTMLElement;
+  private node: any;
   private monitored: boolean = false;
   private nodeDisplay: any;
-  private rendered: boolean;
+  private rendered: any;
 
   public componentDidMount() {
     const { visible } = this.props;
@@ -117,7 +117,7 @@ class Transition extends React.Component<TransitionProps> {
     });
   }
 
-  public setNodeStyle = (node: HTMLElement, cssProp: React.CSSProperties) => {
+  public setNodeStyle = (node: any, cssProp: any) => {
     Object.keys(cssProp).forEach(key => {
       node.style[key] = cssProp[key];
     });

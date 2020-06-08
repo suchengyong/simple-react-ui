@@ -1,8 +1,9 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { Wave, classes } from '../utils';
+import { classes } from '../utils';
+import Wave from '../wave/Wave';
 import Icon from '../icon/Icon';
-import './style';
+//import './style';
 
 export interface ButtonProps {
   icon?: string;

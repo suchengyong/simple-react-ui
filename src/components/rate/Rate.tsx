@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
 import Star from './Star';
-import './style';
+//import './style';
 
 export interface RateProps {
   value?: number;

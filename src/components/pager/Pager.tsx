@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { calculatePagerPages, classes } from '../utils';
 import Icon from '../icon/Icon';
-import './style';
+//import './style';
 
 export interface PagerProps {
   current?: number;

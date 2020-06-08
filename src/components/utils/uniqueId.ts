@@ -1,4 +1,4 @@
-const xueUniqueIdMap = {};
+const xueUniqueIdMap: any = {};
 
 function uniqueId(prefix = '$xue$') {
   if (!xueUniqueIdMap[prefix]) {

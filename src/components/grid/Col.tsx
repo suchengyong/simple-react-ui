@@ -48,8 +48,10 @@ class Col extends React.Component<IColProps> {
     } = this.props;
     const classNameArr = [`col-span-${span}`, `col-offset-${offset}`];
     Object.keys(options).forEach(key => {
-      if (options[key]) {
-        const { span: optionSpan, offset: optionOffset = 0 } = options[key];
+      if ((options as any)[key]) {
+        const { span: optionSpan, offset: optionOffset = 0 } = (options as any)[
+          key
+        ];
         classNameArr.push(`${key}-col-span-${optionSpan}`);
         classNameArr.push(`${key}-col-offset-${optionOffset}`);
       }

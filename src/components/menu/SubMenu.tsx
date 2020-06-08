@@ -73,7 +73,7 @@ class SubMenu extends React.Component<SubMenuProps> {
       children,
     } = this.props;
     return React.Children.map(
-      children,
+      children as any,
       (child: React.ReactElement<ChildProps>, index: number) => {
         const uniqueKey = this.getUniqueKeyFromChild(child, index);
         this.childrenKeys.push(uniqueKey);

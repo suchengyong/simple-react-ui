@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { arrayIsEqual, classes } from '../utils';
-import './style';
+//import './style';
 
 export interface CollapseProps {
   activeKey?: string[];
@@ -122,7 +122,7 @@ class Collapse extends React.Component<CollapseProps, CollapseState> {
     const { showArrow, children } = this.props;
     const { derivedActiveKey } = this.state;
     return React.Children.map(
-      children,
+      children as any,
       (child: React.ReactElement<PanelProps>) => {
         if (!child) {
           return null;

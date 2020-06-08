@@ -1,10 +1,9 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
 import { classes, arrayIsEqual } from '../utils';
 import Icon from '../icon/Icon';
 import Pager from '../pager/Pager';
-import './style';
+//import './style';
 import Spin from '../spin/Spin';
 
 export interface Data {
@@ -109,13 +108,13 @@ class Table extends React.Component<TableProps, TableState> {
     }
   }
 
-  private headEl: HTMLDivElement;
-  private bodyEl: HTMLDivElement;
-  private rightFixedBodyEl: HTMLDivElement;
-  private leftFixedBodyEl: HTMLDivElement;
-  private tableEl: HTMLDivElement;
-  private wrapperEl: HTMLDivElement;
-  private mouseIn: 'leftFixed' | 'bodyInner' | 'rightFixed' | '';
+  private headEl: any;
+  private bodyEl: any;
+  private rightFixedBodyEl: any;
+  private leftFixedBodyEl: any;
+  private tableEl: any;
+  private wrapperEl: any;
+  private mouseIn: any;
   private maxScrollLeft: number = 0;
 
   constructor(props: TableProps) {
@@ -792,7 +791,7 @@ class Table extends React.Component<TableProps, TableState> {
   };
 
   // 监听 table 横向滚动
-  public handleTableScroll: React.ReactEventHandler<HTMLDivElement> = e => {
+  public handleTableScroll: React.ReactEventHandler<HTMLDivElement> = () => {
     const { scrollLeft } = this.tableEl;
     const { maxScrollLeft } = this;
     const { xScrollPosition } = this.state;

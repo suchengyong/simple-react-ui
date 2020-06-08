@@ -4,7 +4,7 @@ import { classes } from '../utils';
 import CascaderMenu from './CascaderMenu';
 import Icon from '../icon/Icon';
 import Unfold from '../transition/Unfold';
-import './style';
+//import './style';
 
 export interface Option {
   value: string;
@@ -54,7 +54,7 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
     changeOnSelect: PropTypes.bool,
   };
 
-  private cascaderEl: HTMLDivElement;
+  private cascaderEl: any;
 
   constructor(props: CascaderProps) {
     super(props);

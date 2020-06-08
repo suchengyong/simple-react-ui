@@ -4,7 +4,7 @@ import { classes } from '../utils';
 import { info, success, warning, error, removeMessage } from './openMessage';
 import Transition from '../transition/Transition';
 import Icon from '../icon/Icon';
-import './style';
+//import './style';
 
 export interface MessageProps {
   content: string | React.ReactNode;

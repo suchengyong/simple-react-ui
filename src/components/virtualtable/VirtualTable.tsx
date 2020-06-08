@@ -1,8 +1,6 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 import Scroll from '../scroll/Scroll';
 
 export interface Data {

@@ -25,7 +25,7 @@ suchengyong-react-simple-ui 只依赖 React、ReactDOM 两个核心库以及 Pro
 ### 简单示例
 
 ```
-import  {  Button  }  from  'suchengyong-react-simple-ui'
+import  {  Button  }  from  'suchengyong-simple-react'
 import  'suchengyong-react-simple-ui/lib/simple-ui.css'
 
 <Button  type="primary">Primary</Button>

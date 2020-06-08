@@ -1,21 +1,22 @@
-import { ApplyPluginsType } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/runtime';
+// @ts-nocheck
+import { ApplyPluginsType } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_runtime@3.2.3@@umijs/runtime';
 import { plugin } from './plugin';
 
 const routes = [
   {
     "path": "/",
-    "component": (props) => require('react').createElement(require('/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
+    "component": (props) => require('react').createElement(require('../../../node_modules/_@umijs_preset-dumi@1.0.31@@umijs/preset-dumi/lib/themes/default/layout.js').default, {
       ...{"menus":{"*":{"*":[{"path":"/","title":"首页介绍","meta":{"order":1}}],"/component":[{"title":"通用组件","children":[{"path":"/component/button","title":"Button 按钮"},{"path":"/component/grid","title":"Grid 栅格"},{"path":"/component/input","title":"Input 输入框"}]}],"/guide":[{"title":"使用文档","children":[{"path":"/guide","title":"开始使用"},{"path":"/guide/color","title":"Color 色彩搭配"}]}]}},"locales":[],"navs":{"*":[{"title":"文档","path":"/guide"},{"title":"组件库","path":"/component"},{"title":"GitHub","path":"https://github.com/suchengyong/simple-react-ui"}]},"title":"react 组件库","logo":"https://simple-ui.netlify.app//logo.png","desc":"一个简洁风格的组件库","mode":"site"},
       ...props,
     }),
     "routes": [
       {
         "path": "/",
-        "component": require('/Users/suchengyong/Desktop/products/simple-react-ui/docs/index.md').default,
+        "component": require('../../../docs/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": null,
+          "updatedTime": 1589369683000,
           "title": "首页介绍",
           "order": 1,
           "hero": {
@@ -45,11 +46,11 @@ const routes = [
       },
       {
         "path": "/component/button",
-        "component": require('/Users/suchengyong/Desktop/products/simple-react-ui/docs/component/button.md').default,
+        "component": require('../../../docs/component/button.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/component/button.md",
-          "updatedTime": null,
+          "updatedTime": 1589364113000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -102,11 +103,11 @@ const routes = [
       },
       {
         "path": "/component/grid",
-        "component": require('/Users/suchengyong/Desktop/products/simple-react-ui/docs/component/grid.md').default,
+        "component": require('../../../docs/component/grid.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/component/grid.md",
-          "updatedTime": null,
+          "updatedTime": 1589364113000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -159,11 +160,11 @@ const routes = [
       },
       {
         "path": "/component/input",
-        "component": require('/Users/suchengyong/Desktop/products/simple-react-ui/docs/component/input.md').default,
+        "component": require('../../../docs/component/input.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/component/input.md",
-          "updatedTime": null,
+          "updatedTime": 1589364113000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -256,11 +257,11 @@ const routes = [
       },
       {
         "path": "/guide/color",
-        "component": require('/Users/suchengyong/Desktop/products/simple-react-ui/docs/guide/color.md').default,
+        "component": require('../../../docs/guide/color.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/guide/color.md",
-          "updatedTime": null,
+          "updatedTime": 1589364113000,
           "group": {
             "title": "文档说明",
             "path": "/guide"
@@ -298,11 +299,11 @@ const routes = [
       },
       {
         "path": "/guide",
-        "component": require('/Users/suchengyong/Desktop/products/simple-react-ui/docs/guide/index.md').default,
+        "component": require('../../../docs/guide/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/guide/index.md",
-          "updatedTime": null,
+          "updatedTime": 1589364113000,
           "group": {
             "title": "文档说明",
             "path": "/guide"

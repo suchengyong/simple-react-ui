@@ -16,11 +16,11 @@ export interface Options {
 const messageContainerMap = {};
 
 function addMessageContainer(messageId: string, container: HTMLDivElement) {
-  messageContainerMap[messageId] = container;
+  (messageContainerMap as any)[messageId] = container;
 }
 
 function ensureUniqueMessage(messageId: string) {
-  if (messageContainerMap[messageId]) {
+  if ((messageContainerMap as any)[messageId]) {
     throw new Error(`Dunplicate messageId found: ${messageId}`);
   }
 }
@@ -43,7 +43,7 @@ function openMessage(
   const container = document.createElement('div');
   document.body.append(container);
   const messageInstance = React.createElement(
-    Message as React.ComponentClass,
+    (Message as any) as React.ComponentClass,
     {
       content,
       mode,
@@ -61,13 +61,13 @@ function openMessage(
 }
 
 export function removeMessage(messageId: string) {
-  if (!messageContainerMap[messageId]) {
+  if (!(messageContainerMap as any)[messageId]) {
     return;
   }
-  const container = messageContainerMap[messageId];
+  const container = (messageContainerMap as any)[messageId];
   ReactDOM.unmountComponentAtNode(container);
   container.remove();
-  delete messageContainerMap[messageId];
+  delete (messageContainerMap as any)[messageId];
 }
 
 export function info(options: Options) {

@@ -5,7 +5,7 @@ import { classes } from '../utils';
 import { openModal, removeModal } from './openModal';
 import Transition from '../transition/Transition';
 import Button from '../button/Button';
-import './style';
+//import './style';
 
 export interface PromiseHandler {
   resolve: () => any;
@@ -80,9 +80,8 @@ class Modal extends React.Component<ModalProps, ModalState> {
   };
 
   private timeout: any;
-  private bodyOverflow: string | null;
-  private bodyPaddingRight: string | null;
-
+  private bodyOverflow: any;
+  private bodyPaddingRight: any;
   constructor(props: ModalProps) {
     super(props);
     this.state = {

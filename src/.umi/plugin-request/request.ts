@@ -1,5 +1,6 @@
+// @ts-nocheck
 /**
- * Base on https://github.com/umijs//Users/suchengyong/Desktop/products/simple-react-ui/node_modules/umi-request
+ * Base on https://github.com/umijs//Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_umi-request@1.3.3@umi-request
  */
 import {
   extend,
@@ -12,14 +13,14 @@ import {
   RequestResponse,
   RequestInterceptor,
   ResponseInterceptor,
-} from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/umi-request';
+} from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_umi-request@1.3.3@umi-request';
 // @ts-ignore
 
 import { ApplyPluginsType } from 'umi';
 import { history, plugin } from '../core/umiExports';
             
 import { message, notification } from 'antd';
-import useUmiRequest from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/use-request';
+import useUmiRequest from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_use-request@1.4.3@@umijs/use-request';
 import {
   BaseOptions,
   BasePaginatedOptions,
@@ -35,7 +36,7 @@ import {
   PaginatedOptionsWithFormat,
   PaginatedParams,
   PaginatedResult,
-} from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/@umijs/use-request/lib/types';
+} from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_use-request@1.4.3@@umijs/use-request/lib/types';
 
 type ResultWithData<T = any> = { data: T; [key: string]: any };
 

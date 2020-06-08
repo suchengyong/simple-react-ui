@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 
 export interface InputProps {
   value?: string;
@@ -70,7 +70,7 @@ class Input extends React.Component<InputProps, InputState> {
     return null;
   }
 
-  private inputRef: HTMLInputElement;
+  private inputRef: any;
 
   constructor(props: InputProps) {
     super(props);
@@ -79,7 +79,7 @@ class Input extends React.Component<InputProps, InputState> {
     };
   }
 
-  public handleChange: React.ChangeEventHandler<HTMLInputElement> = e => {
+  public handleChange: React.ChangeEventHandler<any> = e => {
     const { onChange } = this.props;
     if (onChange) {
       onChange(e);
@@ -89,7 +89,7 @@ class Input extends React.Component<InputProps, InputState> {
     });
   };
 
-  public handleKeyDown: React.KeyboardEventHandler<HTMLInputElement> = e => {
+  public handleKeyDown: React.KeyboardEventHandler<any> = e => {
     const { onPressEnter, onKeyDown } = this.props;
     if (onPressEnter && e.keyCode === 13) {
       onPressEnter(e);
@@ -99,7 +99,7 @@ class Input extends React.Component<InputProps, InputState> {
     }
   };
 
-  public saveInputRef = (node: HTMLInputElement) => {
+  public saveInputRef = (node: any) => {
     this.inputRef = node;
   };
 

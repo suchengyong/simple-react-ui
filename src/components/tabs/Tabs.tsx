@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { classes } from '../utils';
-import './style';
+//import './style';
 
 export interface TabsProps {
   activeKey?: string;
@@ -49,9 +49,9 @@ class Tabs extends React.Component<TabsProps, TabsState> {
     return null;
   }
 
-  private headRef: HTMLUListElement;
-  private roleRef: HTMLLIElement;
-  private bodyRef: HTMLUListElement;
+  private headRef: any;
+  private roleRef: any;
+  private bodyRef: any;
   private keys: string[] = [];
 
   constructor(props: TabsProps) {
@@ -69,14 +69,14 @@ class Tabs extends React.Component<TabsProps, TabsState> {
       });
     } else {
       const { derivedActiveKey } = this.state;
-      this.locateUnderline(derivedActiveKey, this[derivedActiveKey]);
+      this.locateUnderline(derivedActiveKey, (this as any)[derivedActiveKey]);
     }
   }
 
   public componentDidUpdate(prevProps: TabsProps, prevState: TabsState) {
     const { derivedActiveKey } = this.state;
     if (derivedActiveKey !== prevState.derivedActiveKey) {
-      this.locateUnderline(derivedActiveKey, this[derivedActiveKey]);
+      this.locateUnderline(derivedActiveKey, (this as any)[derivedActiveKey]);
     }
   }
 
@@ -84,7 +84,7 @@ class Tabs extends React.Component<TabsProps, TabsState> {
     const { children } = this.props;
     const { derivedActiveKey } = this.state;
     return React.Children.map(
-      children,
+      children as any,
       (child: React.ReactElement<TabPane>) => {
         if (!child) {
           return null;
@@ -94,7 +94,7 @@ class Tabs extends React.Component<TabsProps, TabsState> {
         return (
           <li
             key={key}
-            ref={node => (this[key] = node)}
+            ref={node => ((this as any)[key] = node)}
             onClick={(e: React.MouseEvent) =>
               this.handleClickTitle(key, child.props.disabled as boolean, e)
             }
@@ -114,7 +114,7 @@ class Tabs extends React.Component<TabsProps, TabsState> {
     const { vertical, children } = this.props;
     const { derivedActiveKey } = this.state;
     return React.Children.map(
-      children,
+      children as any,
       (child: React.ReactElement<TabPane>) => {
         if (!child) {
           return null;

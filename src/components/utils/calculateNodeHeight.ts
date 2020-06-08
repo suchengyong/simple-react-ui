@@ -16,8 +16,8 @@ const ELE_FACTORS = [
   'box-sizing',
 ];
 
-function calculateNodeHeight(node: HTMLTextAreaElement): number {
-  const hiddenEle = getHiddenEle() as HTMLTextAreaElement;
+function calculateNodeHeight(node: any): number {
+  const hiddenEle = getHiddenEle() as any;
   const value = node.value;
   const placeholder = node.placeholder;
   const style = window.getComputedStyle(node);

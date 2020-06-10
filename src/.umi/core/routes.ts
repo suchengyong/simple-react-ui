@@ -261,7 +261,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/guide/color.md",
-          "updatedTime": 1589364113000,
+          "updatedTime": 1591618804000,
           "group": {
             "title": "文档说明",
             "path": "/guide"
@@ -303,7 +303,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/guide/index.md",
-          "updatedTime": 1589364113000,
+          "updatedTime": 1591618804000,
           "group": {
             "title": "文档说明",
             "path": "/guide"

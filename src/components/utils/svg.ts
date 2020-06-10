@@ -1,3 +1,4 @@
+/* eslint-disable */
 !(function(s: any): any {
   var l: any;
   var i: any =

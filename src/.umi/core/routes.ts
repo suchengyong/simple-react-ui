@@ -6,7 +6,7 @@ const routes = [
   {
     "path": "/",
     "component": (props) => require('react').createElement(require('../../../node_modules/_@umijs_preset-dumi@1.0.31@@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"首页介绍","meta":{"order":1}}],"/component":[{"title":"通用组件","children":[{"path":"/component/button","title":"Button 按钮"},{"path":"/component/grid","title":"Grid 栅格"},{"path":"/component/input","title":"Input 输入框"}]}],"/guide":[{"title":"使用文档","children":[{"path":"/guide","title":"开始使用"},{"path":"/guide/color","title":"Color 色彩搭配"}]}]}},"locales":[],"navs":{"*":[{"title":"文档","path":"/guide"},{"title":"组件库","path":"/component"},{"title":"GitHub","path":"https://github.com/suchengyong/simple-react-ui"}]},"title":"react 组件库","logo":"https://simple-ui.netlify.app//logo.png","desc":"一个简洁风格的组件库","mode":"site"},
+      ...{"menus":{"*":{"*":[{"path":"/","title":"首页介绍","meta":{"order":1}}],"/component":[{"title":"基础布局","children":[{"path":"/component/grid","title":"Grid 栅格"}]},{"title":"通用组件","children":[{"path":"/component/button","title":"Button 按钮"}]},{"title":"导航组件","children":[{"path":"/component/affix","title":"Affix 滚动自顶部固定"},{"path":"/component/menu","title":"Menu 导航菜单"},{"path":"/component/pager","title":"Pager 分页"}]},{"title":"表单组件","children":[{"path":"/component/input","title":"Input 输入框"},{"path":"/component/cascader","title":"Cascader 级联选择"}]}],"/guide":[{"title":"使用文档","children":[{"path":"/guide","title":"开始使用"},{"path":"/guide/color","title":"Color 色彩搭配"}]}]}},"locales":[],"navs":{"*":[{"title":"文档","path":"/guide"},{"title":"组件库","path":"/component"},{"title":"GitHub","path":"https://github.com/suchengyong/simple-react-ui"}]},"title":"react 组件库","logo":"https://simple-ui.netlify.app//logo.png","desc":"一个简洁风格的组件库","mode":"site"},
       ...props,
     }),
     "routes": [
@@ -43,6 +43,48 @@ const routes = [
           ]
         },
         "title": "首页介绍"
+      },
+      {
+        "path": "/component/affix",
+        "component": require('../../../docs/component/affix.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/affix.md",
+          "updatedTime": 1593507366231,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 7,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Affix 滚动自顶部固定",
+              "heading": "affix-滚动自顶部固定"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Affix 滚动自顶部固定",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Affix 滚动自顶部固定"
       },
       {
         "path": "/component/button",
@@ -100,6 +142,58 @@ const routes = [
           }
         },
         "title": "Button 按钮"
+      },
+      {
+        "path": "/component/cascader",
+        "component": require('../../../docs/component/cascader.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/cascader.md",
+          "updatedTime": 1593741948714,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 10,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Cascader 级联选择",
+              "heading": "cascader-级联选择"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 3,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 4,
+              "value": "Cascader",
+              "heading": "cascader"
+            },
+            {
+              "depth": 4,
+              "value": "Option",
+              "heading": "option"
+            }
+          ],
+          "title": "Cascader 级联选择",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Cascader 级联选择"
       },
       {
         "path": "/component/grid",
@@ -256,6 +350,105 @@ const routes = [
         "title": "Input 输入框"
       },
       {
+        "path": "/component/menu",
+        "component": require('../../../docs/component/menu.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/menu.md",
+          "updatedTime": 1593688189605,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 8,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Menu 导航菜单",
+              "heading": "menu-导航菜单"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 3,
+              "value": "Menu",
+              "heading": "menu"
+            },
+            {
+              "depth": 3,
+              "value": "SubMenu",
+              "heading": "submenu"
+            },
+            {
+              "depth": 3,
+              "value": "MenuItem",
+              "heading": "menuitem"
+            }
+          ],
+          "title": "Menu 导航菜单",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Menu 导航菜单"
+      },
+      {
+        "path": "/component/pager",
+        "component": require('../../../docs/component/pager.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/pager.md",
+          "updatedTime": 1593741961830,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 9,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Pager 分页",
+              "heading": "pager-分页"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 3,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Pager 分页",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Pager 分页"
+      },
+      {
         "path": "/guide/color",
         "component": require('../../../docs/guide/color.md').default,
         "exact": true,
@@ -343,7 +536,7 @@ const routes = [
         "path": "/component",
         "meta": {},
         "exact": true,
-        "redirect": "/component/button"
+        "redirect": "/component/grid"
       }
     ],
     "title": "react 组件库"

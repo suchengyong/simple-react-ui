@@ -16,3 +16,10 @@
 .magright{
     margin-right: 20px;
 }
+.menuWidth{
+    width: 250px;
+}
+
+ul{
+    list-style-type: none !important;
+}

@@ -16,8 +16,20 @@ export default defineConfig({
   menus: {
     '/component': [
       {
+        title: '基础布局',
+        children: ['component/grid'],
+      },
+      {
         title: '通用组件',
-        children: ['component/button', 'component/grid', 'component/input'],
+        children: ['component/button'],
+      },
+      {
+        title: '导航组件',
+        children: ['component/affix', 'component/menu', 'component/pager'],
+      },
+      {
+        title: '表单组件',
+        children: ['component/input', 'component/cascader'],
       },
     ],
     '/guide': [

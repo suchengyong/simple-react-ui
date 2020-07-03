@@ -146,7 +146,7 @@ class SubMenu extends React.Component<SubMenuProps> {
           vertical={true}
           visible={expandKeys!.indexOf(uniqueKey!) > -1 || itemGroup!}
         >
-          <ul className={classes(cn, 'children-wrapper')}>
+          <ul className={classes(cn, 'children-wrapper', [theme])}>
             {this.renderChildren()}
           </ul>
         </Unfold>

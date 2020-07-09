@@ -6,7 +6,7 @@ const routes = [
   {
     "path": "/",
     "component": (props) => require('react').createElement(require('../../../node_modules/_@umijs_preset-dumi@1.0.31@@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"首页介绍","meta":{"order":1}}],"/component":[{"title":"基础布局","children":[{"path":"/component/grid","title":"Grid 栅格"}]},{"title":"通用组件","children":[{"path":"/component/button","title":"Button 按钮"}]},{"title":"导航组件","children":[{"path":"/component/affix","title":"Affix 滚动自顶部固定"},{"path":"/component/menu","title":"Menu 导航菜单"},{"path":"/component/pager","title":"Pager 分页"}]},{"title":"表单组件","children":[{"path":"/component/input","title":"Input 输入框"},{"path":"/component/cascader","title":"Cascader 级联选择"}]}],"/guide":[{"title":"使用文档","children":[{"path":"/guide","title":"开始使用"},{"path":"/guide/color","title":"Color 色彩搭配"}]}]}},"locales":[],"navs":{"*":[{"title":"文档","path":"/guide"},{"title":"组件库","path":"/component"},{"title":"GitHub","path":"https://github.com/suchengyong/simple-react-ui"}]},"title":"react 组件库","logo":"https://simple-ui.netlify.app//logo.png","desc":"一个简洁风格的组件库","mode":"site"},
+      ...{"menus":{"*":{"*":[{"path":"/","title":"首页介绍","meta":{"order":1}}],"/component":[{"title":"基础布局","children":[{"path":"/component/grid","title":"Grid 栅格"}]},{"title":"通用组件","children":[{"path":"/component/button","title":"Button 按钮"}]},{"title":"导航组件","children":[{"path":"/component/affix","title":"Affix 滚动自顶部固定"},{"path":"/component/menu","title":"Menu 导航菜单"},{"path":"/component/pager","title":"Pager 分页"}]},{"title":"表单组件","children":[{"path":"/component/input","title":"Input 输入框"},{"path":"/component/cascader","title":"Cascader 级联选择"},{"path":"/component/checkbox","title":"CheckBox 选择框"},{"path":"/component/datepicker","title":"DatePicker 日期选择"},{"path":"/component/radio","title":"Radio 单选框"},{"path":"/component/rate","title":"Rate 评分"},{"path":"/component/switch","title":"Switch 开关"}]},{"title":"数据展示","children":[{"path":"/component/collapse","title":"Collapse 折叠面板"},{"path":"/component/popover","title":"Popover 气泡卡片"},{"path":"/component/slides","title":"Slides 轮播"},{"path":"/component/tabs","title":"Tabs 标签页"}]},{"title":"信息反馈","children":[{"path":"/component/message","title":"Message 全局提示"},{"path":"/component/modal","title":"Modal 对话框"},{"path":"/component/spin","title":"Spin 加载中"},{"path":"/component/lightup","title":"LightUp 图片预览"},{"path":"/component/scroll","title":"Scroll 滚动条"}]}],"/guide":[{"title":"使用文档","children":[{"path":"/guide","title":"开始使用"},{"path":"/guide/color","title":"Color 色彩搭配"}]}]}},"locales":[],"navs":{"*":[{"title":"文档","path":"/guide"},{"title":"组件库","path":"/component"},{"title":"GitHub","path":"https://github.com/suchengyong/simple-react-ui"}]},"title":"react 组件库","logo":"https://simple-ui.netlify.app//logo.png","desc":"一个简洁风格的组件库","mode":"site"},
       ...props,
     }),
     "routes": [
@@ -50,7 +50,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/component/affix.md",
-          "updatedTime": 1593507366231,
+          "updatedTime": 1593765812000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -149,7 +149,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/component/cascader.md",
-          "updatedTime": 1593741948714,
+          "updatedTime": 1593765812000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -194,6 +194,172 @@ const routes = [
           }
         },
         "title": "Cascader 级联选择"
+      },
+      {
+        "path": "/component/checkbox",
+        "component": require('../../../docs/component/checkbox.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/checkbox.md",
+          "updatedTime": 1594281007786,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 11,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "CheckBox 选择框",
+              "heading": "checkbox-选择框"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 4,
+              "value": "CheckBox",
+              "heading": "checkbox"
+            },
+            {
+              "depth": 4,
+              "value": "CheckBoxGroup",
+              "heading": "checkboxgroup"
+            },
+            {
+              "depth": 4,
+              "value": "Option",
+              "heading": "option"
+            }
+          ],
+          "title": "CheckBox 选择框",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "CheckBox 选择框"
+      },
+      {
+        "path": "/component/collapse",
+        "component": require('../../../docs/component/collapse.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/collapse.md",
+          "updatedTime": 1594284647599,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 16,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Collapse 折叠面板",
+              "heading": "collapse-折叠面板"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 3,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 4,
+              "value": "Collapse",
+              "heading": "collapse"
+            },
+            {
+              "depth": 4,
+              "value": "Collapse",
+              "heading": "collapse-1"
+            }
+          ],
+          "title": "Collapse 折叠面板",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Collapse 折叠面板"
+      },
+      {
+        "path": "/component/datepicker",
+        "component": require('../../../docs/component/datepicker.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/datepicker.md",
+          "updatedTime": 1594281807936,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 12,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "DatePicker 日期选择",
+              "heading": "datepicker-日期选择"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "DatePicker 日期选择",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "DatePicker 日期选择"
       },
       {
         "path": "/component/grid",
@@ -350,12 +516,59 @@ const routes = [
         "title": "Input 输入框"
       },
       {
+        "path": "/component/lightup",
+        "component": require('../../../docs/component/lightup.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/lightup.md",
+          "updatedTime": 1594290547022,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 23,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "LightUp 图片预览",
+              "heading": "lightup-图片预览"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "LightUp 图片预览",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "LightUp 图片预览"
+      },
+      {
         "path": "/component/menu",
         "component": require('../../../docs/component/menu.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/component/menu.md",
-          "updatedTime": 1593688189605,
+          "updatedTime": 1593765812000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -407,12 +620,116 @@ const routes = [
         "title": "Menu 导航菜单"
       },
       {
+        "path": "/component/message",
+        "component": require('../../../docs/component/message.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/message.md",
+          "updatedTime": 1594288401340,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 20,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Message 全局提示",
+              "heading": "message-全局提示"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 3,
+              "value": "Options",
+              "heading": "options"
+            }
+          ],
+          "title": "Message 全局提示",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Message 全局提示"
+      },
+      {
+        "path": "/component/modal",
+        "component": require('../../../docs/component/modal.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/modal.md",
+          "updatedTime": 1594289533360,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 21,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Modal 对话框",
+              "heading": "modal-对话框"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 3,
+              "value": "Options",
+              "heading": "options"
+            }
+          ],
+          "title": "Modal 对话框",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Modal 对话框"
+      },
+      {
         "path": "/component/pager",
         "component": require('../../../docs/component/pager.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/component/pager.md",
-          "updatedTime": 1593741961830,
+          "updatedTime": 1593765812000,
           "group": {
             "title": "组件",
             "path": "/component"
@@ -447,6 +764,407 @@ const routes = [
           }
         },
         "title": "Pager 分页"
+      },
+      {
+        "path": "/component/popover",
+        "component": require('../../../docs/component/popover.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/popover.md",
+          "updatedTime": 1594285334839,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 17,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Popover 气泡卡片",
+              "heading": "popover-气泡卡片"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Popover 气泡卡片",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Popover 气泡卡片"
+      },
+      {
+        "path": "/component/radio",
+        "component": require('../../../docs/component/radio.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/radio.md",
+          "updatedTime": 1594282588939,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 13,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Radio 单选框",
+              "heading": "radio-单选框"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 3,
+              "value": "Radio",
+              "heading": "radio"
+            },
+            {
+              "depth": 3,
+              "value": "Option",
+              "heading": "option"
+            }
+          ],
+          "title": "Radio 单选框",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Radio 单选框"
+      },
+      {
+        "path": "/component/rate",
+        "component": require('../../../docs/component/rate.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/rate.md",
+          "updatedTime": 1594284132470,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 14,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Rate 评分",
+              "heading": "rate-评分"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 3,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Rate 评分",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Rate 评分"
+      },
+      {
+        "path": "/component/scroll",
+        "component": require('../../../docs/component/scroll.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/scroll.md",
+          "updatedTime": 1594290861511,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 24,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Scroll 滚动条",
+              "heading": "scroll-滚动条"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Scroll 滚动条",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Scroll 滚动条"
+      },
+      {
+        "path": "/component/slides",
+        "component": require('../../../docs/component/slides.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/slides.md",
+          "updatedTime": 1594286998170,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 18,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Slides 轮播",
+              "heading": "slides-轮播"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 3,
+              "value": "Method",
+              "heading": "method"
+            }
+          ],
+          "title": "Slides 轮播",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Slides 轮播"
+      },
+      {
+        "path": "/component/spin",
+        "component": require('../../../docs/component/spin.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/spin.md",
+          "updatedTime": 1594290390038,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 22,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Spin 加载中",
+              "heading": "spin-加载中"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Spin 加载中",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Spin 加载中"
+      },
+      {
+        "path": "/component/switch",
+        "component": require('../../../docs/component/switch.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/switch.md",
+          "updatedTime": 1594283917097,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 15,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Switch 开关",
+              "heading": "switch-开关"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 3,
+              "value": "API",
+              "heading": "api"
+            }
+          ],
+          "title": "Switch 开关",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Switch 开关"
+      },
+      {
+        "path": "/component/tabs",
+        "component": require('../../../docs/component/tabs.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/component/tabs.md",
+          "updatedTime": 1594287302896,
+          "group": {
+            "title": "组件",
+            "path": "/component"
+          },
+          "order": 19,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Tabs 标签页",
+              "heading": "tabs-标签页"
+            },
+            {
+              "depth": 2,
+              "value": "何时使用",
+              "heading": "何时使用"
+            },
+            {
+              "depth": 2,
+              "value": "代码示例:",
+              "heading": "代码示例"
+            },
+            {
+              "depth": 4,
+              "value": "基本用法",
+              "heading": "基本用法"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 3,
+              "value": "Tabs",
+              "heading": "tabs"
+            },
+            {
+              "depth": 3,
+              "value": "TabPane",
+              "heading": "tabpane"
+            }
+          ],
+          "title": "Tabs 标签页",
+          "nav": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "Tabs 标签页"
       },
       {
         "path": "/guide/color",

@@ -29,7 +29,34 @@ export default defineConfig({
       },
       {
         title: '表单组件',
-        children: ['component/input', 'component/cascader'],
+        children: [
+          'component/input',
+          'component/cascader',
+          'component/checkbox',
+          'component/datepicker',
+          'component/radio',
+          'component/rate',
+          'component/switch',
+        ],
+      },
+      {
+        title: '数据展示',
+        children: [
+          'component/collapse',
+          'component/popover',
+          'component/slides',
+          'component/tabs',
+        ],
+      },
+      {
+        title: '信息反馈',
+        children: [
+          'component/message',
+          'component/modal',
+          'component/spin',
+          'component/lightup',
+          'component/scroll',
+        ],
       },
     ],
     '/guide': [

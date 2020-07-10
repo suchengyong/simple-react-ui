@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from '/Users/suchengyong/Desktop/products/simple-react-ui/src/.umi/plugin-initial-state/models/initialState';
+import initialState from '/Users/suchengyong/Desktop/products/simple-react-ui/src/.umi-production/plugin-initial-state/models/initialState';
 
 // @ts-ignore
 import Dispatcher from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_plugin-model@2.5.1@@umijs/plugin-model/lib/helpers/dispatcher';

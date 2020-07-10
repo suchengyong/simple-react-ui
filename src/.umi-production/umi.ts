@@ -1,6 +1,6 @@
 // @ts-nocheck
 import './core/polyfill';
-import '@@/core/devScripts';
+
 import { plugin } from './core/plugin';
 import { createHistory } from './core/history';
 import { ApplyPluginsType } from '/Users/suchengyong/Desktop/products/simple-react-ui/node_modules/_@umijs_runtime@3.2.9@@umijs/runtime';

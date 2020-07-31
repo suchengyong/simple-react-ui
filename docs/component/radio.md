@@ -70,9 +70,9 @@ export default () => {
 | ------------ | -------------------- | ---------------------------------------- | --------- |
 | value        | Radio 当前选中项的值 | any                                      | --        |
 | defaultValue | Radio 默认选中项的值 | any                                      | --        |
-| onChange     | 选中项改变时的回调   | (value: any, e: React.MouseEvent) => any | --        |
+| onChange     | 选中项改变时的回调    | (value: any, e: React.MouseEvent) => any  | --        |
 | vertical     | 选项垂直排列         | boolean                                  | false     |
-| radioStyle   | 选项风格             | "'radio'                                 | 'button'" | "radio" |
+| radioStyle   | 选项风格             | radio,button                            |  radio    |
 | className    | 自定义 Radio 类名    | string                                   | --        |
 | style        | 自定义 Radio 样式    | React.CSSProperties                      | --        |
 
@@ -80,7 +80,7 @@ export default () => {
 
 | 参数      | 说明                       | 类型                | 默认值 |
 | --------- | -------------------------- | ------------------- | ------ |
-| value     | 选项的值，用于判断是否选中 | any                 | --     |
-| disabled  | 禁用状态                   | boolean             | false  |
-| className | 自定义 Option 类名         | string              | --     |
-| style     | 自定义 Option 样式         | React.CSSProperties | --     |
+| value     | 选项的值，用于判断是否选中     |  any                 | --     |
+| disabled  | 禁用状态                    | boolean              | false  |
+| className | 自定义 Option 类名          | string               | --     |
+| style     | 自定义 Option 样式          | React.CSSProperties   | --     |
